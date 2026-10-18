@@ -1075,6 +1075,6 @@ a[href] { cursor: default; }
   font-size: 0;
   width: 43px;
   height: 40px;
-  background: url("assets/icons/w3schools-hijau.png") center / contain no-repeat;
+  background: url("assets/icons/w3schools-hijau.webp") center / contain no-repeat;
 }
 .footer-logo::before { width: 46px; height: 46px; background-image: url("assets/icons/w3schools-footer.png"); }
