@@ -1,0 +1,1380 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta charset="utf-8">
+<title>W3Schools How TO - Code snippets for HTML, CSS and JavaScript</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Code snippets for HTML, CSS and JavaScript.">
+<meta name="theme-color" content="#ffffff">
+
+<!-- All fonts, icons, and photos are stored in assets/. -->
+<link rel="stylesheet" href="stylenorel.css">
+</head>
+<body>
+<a class="skip-link" href="#">Skip to content</a>
+
+<!--
+  CSS-ONLY STATE SWITCHES
+  Hidden radios/checkboxes live at the top of <body> so the CSS general-sibling
+  selector (~) can reach the panels, sidebar and modals that follow them.
+-->
+<input type="radio" name="topmenu" id="tm-none" class="hidden-input" checked aria-label="Close navigation menu">
+<input type="radio" name="topmenu" id="tm-tutorials" class="hidden-input" aria-label="Tutorials">
+<input type="radio" name="topmenu" id="tm-references" class="hidden-input" aria-label="References">
+<input type="radio" name="topmenu" id="tm-exercises" class="hidden-input" aria-label="Exercises">
+<input type="radio" name="topmenu" id="tm-certificates" class="hidden-input" aria-label="Certificates">
+<input type="radio" name="topmenu" id="tm-services" class="hidden-input" aria-label="All our services">
+<input type="checkbox" id="sidebar-toggle" class="hidden-input" aria-label="Show How To sidebar">
+<input type="checkbox" id="contact-toggle" class="hidden-input" aria-label="CONTACT US">
+
+<!-- ================= TOP BAR ================= -->
+<header class="topbar" id="topnav">
+  <a class="logo" href="#" title="Home" aria-label="W3Schools home">
+    <span class="logo-w3" aria-hidden="true"></span><span class="logo-s visually-hidden">W3Schools</span>
+  </a>
+
+  <nav class="topmenu" aria-label="Main">
+    <label class="tm-btn" for="tm-tutorials" title="Tutorials and References">Tutorials <i class="fa fa-caret-down"></i></label>
+    <label class="tm-btn" for="tm-references" title="References">References <i class="fa fa-caret-down"></i></label>
+    <label class="tm-btn" for="tm-exercises" title="Exercises and Quizzes">Exercises <i class="fa fa-caret-down"></i></label>
+    <label class="tm-btn" for="tm-certificates" title="Certificates">Certificates <i class="fa fa-caret-down"></i></label>
+
+  </nav>
+
+  <div class="topright">
+    <form onsubmit="return false" class="search" role="search" method="get">
+      <input type="hidden" name="sitesearch" value="w3schools.com">
+      <input type="search" name="q" placeholder="Search..." aria-label="Search W3Schools" required>
+      <button type="submit" aria-label="Search W3Schools"><i class="fa fa-search" aria-hidden="true"></i></button>
+    </form>
+    <label class="tm-btn tm-services" for="tm-services" title="All our services" aria-label="All our services"><span aria-hidden="true">&#8942;</span></label>
+    <div class="header-extras">
+      <a href="#">Spaces</a>
+      <a href="#">Upgrade</a>
+    </div>
+    <a class="app-pill" href="#" title="W3Schools Adventure App - iOS and Android" aria-label="W3Schools Adventure App - iOS and Android">
+      <span class="app-new">NEW</span>
+      <img class="app-lynx" src="assets/mascot-lynx.png" alt="" width="230" height="295">
+      <span class="app-text">W3Schools app <small>Start the adventure</small></span>
+    </a>
+    <a class="paid-courses" href="#">Paid Courses</a>
+    <a class="signin" href="#" title="Your W3Schools Profile" aria-label="Your W3Schools Profile">Sign In</a>
+  </div>
+</header>
+
+<!-- ================= TOP MENU PANELS ================= -->
+<div class="navpanel" id="panel-tutorials">
+  <div class="inner">
+    <label class="panel-close" for="tm-none" title="Close">&times;</label>
+    <h1>Tutorials</h1>
+    <p class="panel-lead">Learn web development, programming, data science, and more.</p>
+    <h2 class="panel-h">W3SCHOOLS TUTORIALS:</h2>
+    <div class="panel-grid links-grid">
+      <a href="#">HTML</a><a href="#">CSS</a><a href="#">JavaScript</a><a href="#">SQL</a><a href="#">Python</a><a href="#">Java</a>
+      <a href="#">PHP</a><a href="#">C</a><a href="#">C++</a><a href="#">C#</a><a href="#">AWS</a><a href="#">W3.CSS</a>
+      <a href="#">How To</a><a href="#">Bootstrap</a><a href="#">React</a><a href="#">MySQL</a><a href="#">jQuery</a><a href="#">Excel</a>
+      <a href="#">XML</a><a href="#">Django</a><a href="#">NumPy</a><a href="#">Pandas</a><a href="#">Node.js</a><a href="#">DSA</a>
+      <a href="#">TypeScript</a><a href="#">Angular</a><a href="#">AngularJS</a><a href="#">Git</a><a href="#">PostgreSQL</a><a href="#">MongoDB</a>
+      <a href="#">ASP</a><a href="#">AI</a><a href="#">R</a><a href="#">Go</a><a href="#">Kotlin</a><a href="#">Swift</a>
+      <a href="#">Sass</a><a href="#">Vue</a><a href="#">Gen AI</a><a href="#">SciPy</a><a href="#">Cybersecurity</a><a href="#">Data Science</a>
+      <a href="#">Intro to Programming</a><a href="#">Intro to HTML &amp; CSS</a><a href="#">Bash</a><a href="#">Rust</a><a href="#">Tools</a>
+    </div>
+  </div>
+</div>
+
+<div class="navpanel" id="panel-references">
+  <div class="inner">
+    <label class="panel-close" for="tm-none" title="Close">&times;</label>
+    <h1>References</h1>
+    <h2 class="panel-h">W3SCHOOLS REFERENCES:</h2>
+    <div class="panel-grid cards-grid">
+      <a href="#"><h4>HTML</h4><span>Tag reference</span></a>
+      <a href="#"><h4>CSS</h4><span>Reference</span></a>
+      <a href="#"><h4>JavaScript</h4><span>Reference</span></a>
+      <a href="#"><h4>SQL</h4><span>Keyword reference</span></a>
+      <a href="#"><h4>Python</h4><span>Reference</span></a>
+      <a href="#"><h4>Java</h4><span>Reference</span></a>
+      <a href="#"><h4>C</h4><span>Reference</span></a>
+      <a href="#"><h4>C++</h4><span>Reference</span></a>
+      <a href="#"><h4>Colors</h4><span>Color names</span></a>
+      <a href="#"><h4>PHP</h4><span>Reference</span></a>
+      <a href="#"><h4>HTML DOM</h4><span>Reference</span></a>
+      <a href="#"><h4>MySQL</h4><span>Reference</span></a>
+      <a href="#"><h4>W3.CSS</h4><span>Reference</span></a>
+      <a href="#"><h4>Bootstrap 3</h4><span>Reference</span></a>
+      <a href="#"><h4>Bootstrap 4</h4><span>Reference</span></a>
+      <a href="#"><h4>Node.js</h4><span>Reference</span></a>
+      <a href="#"><h4>Django</h4><span>Reference</span></a>
+      <a href="#"><h4>jQuery</h4><span>Reference</span></a>
+      <a href="#"><h4>Vue</h4><span>Attributes</span></a>
+      <a href="#"><h4>Angular</h4><span>Reference</span></a>
+      <a href="#"><h4>Sass</h4><span>Reference</span></a>
+      <a href="#"><h4>XML</h4><span>Reference</span></a>
+      <a href="#"><h4>JSON</h4><span>Reference</span></a>
+      <a href="#"><h4>ASP</h4><span>Reference</span></a>
+      <a href="#"><h4>Icons</h4><span>Reference</span></a>
+      <a href="#"><h4>SVG</h4><span>Reference</span></a>
+      <a href="#"><h4>Canvas</h4><span>Reference</span></a>
+      <a href="#"><h4>Charsets</h4><span>Reference</span></a>
+      <a href="#"><h4>Emojis</h4><span>Reference</span></a>
+      <a href="#"><h4>AppML</h4><span>Reference</span></a>
+      <a href="#"><h4>W3.JS</h4><span>Reference</span></a>
+    </div>
+  </div>
+</div>
+
+<div class="navpanel" id="panel-exercises">
+  <div class="inner">
+    <label class="panel-close" for="tm-none" title="Close">&times;</label>
+    <h1>Exercises</h1>
+    <p class="panel-lead">Practice and test your skills with different exercises.</p>
+    <p class="panel-tip"><b>Tip:</b> <a href="#">Sign in</a> to track your progress.</p>
+    <div class="social-signin">
+      <a href="#" title="Sign in with Google" aria-label="Sign in with Google"><i class="fa-brands fa-google"></i></a>
+      <a href="#" title="Sign in with Facebook" aria-label="Sign in with Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+      <a href="#" title="Sign in with GitHub" aria-label="Sign in with GitHub"><i class="fa-brands fa-github"></i></a>
+    </div>
+    <h2 class="panel-h">Select another topic:</h2>
+    <div class="panel-grid cards-grid">
+      <a href="#"><h4>HTML</h4><span>Exercises</span></a>
+      <a href="#"><h4>CSS</h4><span>Exercises</span></a>
+      <a href="#"><h4>JavaScript</h4><span>Exercises</span></a>
+      <a href="#"><h4>SQL</h4><span>Exercises</span></a>
+      <a href="#"><h4>Python</h4><span>Exercises</span></a>
+      <a href="#"><h4>Java</h4><span>Exercises</span></a>
+      <a href="#"><h4>C</h4><span>Exercises</span></a>
+      <a href="#"><h4>C++</h4><span>Exercises</span></a>
+      <a href="#"><h4>C#</h4><span>Exercises</span></a>
+      <a href="#"><h4>PHP</h4><span>Exercises</span></a>
+      <a href="#"><h4>React</h4><span>Exercises</span></a>
+      <a href="#"><h4>MySQL</h4><span>Exercises</span></a>
+      <a href="#"><h4>Excel</h4><span>Exercises</span></a>
+      <a href="#"><h4>DSA</h4><span>Exercises</span></a>
+      <a href="#"><h4>Bootstrap 3</h4><span>Exercises</span></a>
+      <a href="#"><h4>Bootstrap 4</h4><span>Exercises</span></a>
+      <a href="#"><h4>Bootstrap 5</h4><span>Exercises</span></a>
+      <a href="#"><h4>Node.js</h4><span>Exercises</span></a>
+      <a href="#"><h4>TypeScript</h4><span>Exercises</span></a>
+      <a href="#"><h4>Django</h4><span>Exercises</span></a>
+      <a href="#"><h4>PostgreSQL</h4><span>Exercises</span></a>
+      <a href="#"><h4>jQuery</h4><span>Exercises</span></a>
+      <a href="#"><h4>NumPy</h4><span>Exercises</span></a>
+      <a href="#"><h4>Pandas</h4><span>Exercises</span></a>
+      <a href="#"><h4>Angular</h4><span>Exercises</span></a>
+      <a href="#"><h4>Git</h4><span>Exercises</span></a>
+      <a href="#"><h4>MongoDB</h4><span>Exercises</span></a>
+      <a href="#"><h4>R</h4><span>Exercises</span></a>
+      <a href="#"><h4>Go</h4><span>Exercises</span></a>
+      <a href="#"><h4>Kotlin</h4><span>Exercises</span></a>
+      <a href="#"><h4>Swift</h4><span>Exercises</span></a>
+      <a href="#"><h4>Vue</h4><span>Exercises</span></a>
+      <a href="#"><h4>SciPy</h4><span>Exercises</span></a>
+      <a href="#"><h4>Bash</h4><span>Exercises</span></a>
+    </div>
+  </div>
+</div>
+
+<div class="navpanel" id="panel-certificates">
+  <div class="inner">
+    <label class="panel-close" for="tm-none" title="Close">&times;</label>
+    <h1>Get Certified</h1>
+    <h2 class="panel-h">W3SCHOOLS CERTIFICATES:</h2>
+    <div class="panel-grid links-grid">
+      <a href="#">HTML</a><a href="#">CSS</a><a href="#">JavaScript</a><a href="#">SQL</a><a href="#">Python</a><a href="#">Java</a>
+      <a href="#">C</a><a href="#">C++</a><a href="#">C#</a><a href="#">PHP</a><a href="#">React</a><a href="#">MySQL</a>
+      <a href="#">Excel</a><a href="#">DSA</a><a href="#">W3.CSS</a><a href="#">Bootstrap 3</a><a href="#">Bootstrap 4</a><a href="#">Bootstrap 5</a>
+      <a href="#">Node.js</a><a href="#">TypeScript</a><a href="#">Django</a><a href="#">PostgreSQL</a><a href="#">jQuery</a><a href="#">Vue</a>
+      <a href="#">NumPy</a><a href="#">Pandas</a><a href="#">XML</a><a href="#">Cyber Security</a><a href="#">Accessibility</a><a href="#">AngularJS</a>
+      <a href="#">Git</a><a href="#">MongoDB</a><a href="#">R</a><a href="#">Go</a><a href="#">Kotlin</a><a href="#">SASS</a>
+      <a href="#">SciPy</a><a href="#">BASH</a><a href="#">Rust</a>
+    </div>
+  </div>
+</div>
+
+<div class="navpanel" id="panel-services">
+  <div class="inner">
+    <label class="panel-close" for="tm-none" title="Close">&times;</label>
+    <h1>All Our Services</h1>
+
+    <!-- Shown only on narrow screens, where the four top menus are hidden -->
+    <div class="mobile-shortcuts">
+      <label for="tm-tutorials">Tutorials</label>
+      <label for="tm-references">References</label>
+      <label for="tm-exercises">Exercises</label>
+      <label for="tm-certificates">Certificates</label>
+    </div>
+
+    <p class="panel-lead">W3Schools offers a wide range of services and products for beginners and professionals,<br>helping millions of people everyday to learn and master new skills.</p>
+
+    <div class="panel-grid services-grid">
+      <a href="#"><b>Free Tutorials</b><span>Enjoy our free tutorials like millions of other internet users since 1999</span></a>
+      <a href="#"><b>References</b><span>Explore our selection of references covering all popular coding languages</span></a>
+      <a href="#"><b>W3Schools app <em>NEW</em></b><span>For iOS &amp; Android, start a new learning adventure.</span></a>
+      <a href="#"><b>Create a Website</b><span>Create your own website with <strong>W3Schools Spaces</strong> - no setup required</span></a>
+      <a href="#"><b>Exercises</b><span>Test your skills with different exercises</span></a>
+      <a href="#"><b>Quizzes</b><span>Test yourself with multiple choice questions</span></a>
+      <a href="#"><b>Code Challenges</b><span>Test your skills with interactive code challenges</span></a>
+      <a href="#"><b>Get Certified</b><span>Document your knowledge</span></a>
+      <a href="#"><b>Log in / Sign Up</b><span>Create an account to track your progress</span></a>
+      <a href="#"><b>League</b><span>Earn XP and climb the ranks with different challenges</span></a>
+      <a href="#"><b>Upgrade</b><span>Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)</span></a>
+      <a href="#"><b>Where To Start</b><span>Not sure where you want to start? Follow our guided path</span></a>
+      <a href="#"><b>Code Editor (Try it)</b><span>With our online code editor, you can edit code and view the result in your browser</span></a>
+      <a href="#"><b>Templates</b><span>We have created a bunch of responsive website templates you can use - for free!</span></a>
+      <a href="#"><b>Web Hosting</b><span>Host your own website, and share it to the world with <strong>W3Schools Spaces</strong></span></a>
+      <a href="#"><b>Create a Server</b><span>Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.</span></a>
+      <a href="#"><b>How To's</b><span>Large collection of code snippets for HTML, CSS and JavaScript</span></a>
+      <a href="#"><b>CSS Framework</b><span>Build fast and responsive sites using our free <strong>W3.CSS</strong> framework</span></a>
+      <a href="#"><b>Videos</b><span>Learn the basics of HTML in a fun and engaging video tutorial</span></a>
+      <a href="#"><b>Browser Statistics</b><span>Read long term trends of browser usage</span></a>
+      <a href="#"><b>Typing Speed</b><span>Test your typing speed</span></a>
+      <a href="#"><b>Color Picker</b><span>Use our color picker to find different RGB, HEX and HSL colors.</span></a>
+      <a href="#"><b>Newsletter</b><span>Join our newsletter and get access to exclusive content every month</span></a>
+      <a href="#"><b>Emojis Reference</b><span>Check out our refererence page with all the emojis supported in HTML 😊</span></a>
+      <a href="#"><b>Code Game</b><span>W3Schools Coding Game! Help the lynx collect pine cones</span></a>
+      <a href="#"><b>UTF-8 Reference</b><span>Check out our full UTF-8 Character reference</span></a>
+      <a href="#"><b>Community</b><span>Chat, Learn and Connect with Us on Discord</span></a>
+      <a href="#"><b>Academy</b><span>Contact us about W3Schools Academy for educational institutions</span></a>
+      <a href="#"><b>For Businesses</b><span>Contact us about W3Schools Academy for your organization</span></a>
+    </div>
+
+    <div class="services-contact">
+      <h4>Contact Us</h4>
+      <p>About sales: sales@w3schools.com<br>About errors: help@w3schools.com</p>
+      <div class="social">
+        <a href="#" title="YouTube" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+        <a href="#" title="LinkedIn" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="#" title="Discord" aria-label="Discord"><i class="fa-brands fa-discord"></i></a>
+        <a href="#" title="Facebook" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+        <a href="#" title="Instagram" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#" title="TikTok" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ================= SUB NAV (topic bar) ================= -->
+<div class="subnav">
+  <label class="subnav-toggle" for="sidebar-toggle" title="Menu"><i class="fa fa-bars"></i></label>
+  <nav class="subnav-scroll" aria-label="Topics">
+    <a href="#" title="HTML Tutorial" aria-label="HTML Tutorial">HTML</a>
+    <a href="#" title="CSS Tutorial" aria-label="CSS Tutorial">CSS</a>
+    <a href="#" title="JavaScript Tutorial" aria-label="JavaScript Tutorial">JAVASCRIPT</a>
+    <a href="#" title="SQL Tutorial" aria-label="SQL Tutorial">SQL</a>
+    <a href="#" title="Python Tutorial" aria-label="Python Tutorial">PYTHON</a>
+    <a href="#" title="Java Tutorial" aria-label="Java Tutorial">JAVA</a>
+    <a href="#" title="PHP Tutorial" aria-label="PHP Tutorial">PHP</a>
+    <a href="#" title="C Tutorial" aria-label="C Tutorial">C</a>
+    <a href="#" title="C++ Tutorial" aria-label="C++ Tutorial">C++</a>
+    <a href="#" title="C# Tutorial" aria-label="C# Tutorial">C#</a>
+    <a href="#" title="AWS Tutorial" aria-label="AWS Tutorial">AWS</a>
+    <a href="#" title="W3.CSS Tutorial" aria-label="W3.CSS Tutorial">W3.CSS</a>
+    <a href="#" class="active" title="How to" aria-current="page" aria-label="How to">HOW TO</a>
+    <a href="#" title="Bootstrap Tutorial" aria-label="Bootstrap Tutorial">BOOTSTRAP</a>
+    <a href="#" title="React Tutorial" aria-label="React Tutorial">REACT</a>
+    <a href="#" title="MySQL Tutorial" aria-label="MySQL Tutorial">MYSQL</a>
+    <a href="#" title="JQuery Tutorial" aria-label="JQuery Tutorial">JQUERY</a>
+    <a href="#" title="Excel Tutorial" aria-label="Excel Tutorial">EXCEL</a>
+    <a href="#" title="XML Tutorial" aria-label="XML Tutorial">XML</a>
+    <a href="#" title="Django Tutorial" aria-label="Django Tutorial">DJANGO</a>
+    <a href="#" title="NumPy Tutorial" aria-label="NumPy Tutorial">NUMPY</a>
+    <a href="#" title="Pandas Tutorial" aria-label="Pandas Tutorial">PANDAS</a>
+    <a href="#" title="Node.js Tutorial" aria-label="Node.js Tutorial">NODEJS</a>
+    <a href="#" title="DSA Tutorial" aria-label="DSA Tutorial">DSA</a>
+    <a href="#" title="TypeScript Tutorial" aria-label="TypeScript Tutorial">TYPESCRIPT</a>
+    <a href="#" title="Angular Tutorial" aria-label="Angular Tutorial">ANGULAR</a>
+    <a href="#" title="Angular.js Tutorial" aria-label="Angular.js Tutorial">ANGULARJS</a>
+    <a href="#" title="Git Tutorial" aria-label="Git Tutorial">GIT</a>
+    <a href="#" title="PostgreSQL Tutorial" aria-label="PostgreSQL Tutorial">POSTGRESQL</a>
+    <a href="#" title="MongoDB Tutorial" aria-label="MongoDB Tutorial">MONGODB</a>
+    <a href="#" title="ASP Tutorial" aria-label="ASP Tutorial">ASP</a>
+    <a href="#" title="A.I. Tutorial" aria-label="A.I. Tutorial">AI</a>
+    <a href="#" title="R Tutorial" aria-label="R Tutorial">R</a>
+    <a href="#" title="Go Tutorial" aria-label="Go Tutorial">GO</a>
+    <a href="#" title="Kotlin Tutorial" aria-label="Kotlin Tutorial">KOTLIN</a>
+    <a href="#" title="Swift Tutorial" aria-label="Swift Tutorial">SWIFT</a>
+    <a href="#" title="Sass Tutorial" aria-label="Sass Tutorial">SASS</a>
+    <a href="#" title="Vue.js Tutorial" aria-label="Vue.js Tutorial">VUE</a>
+    <a href="#" title="Gen A.I. Tutorial" aria-label="Gen A.I. Tutorial">GEN AI</a>
+    <a href="#" title="SciPy Tutorial" aria-label="SciPy Tutorial">SCIPY</a>
+    <a href="#" title="Cyber security Tutorial" aria-label="Cyber security Tutorial">CYBERSECURITY</a>
+    <a href="#" title="Data science Tutorial" aria-label="Data science Tutorial">DATA SCIENCE</a>
+    <a href="#" title="Introduction to Programming" aria-label="Introduction to Programming">INTRO TO PROGRAMMING</a>
+    <a href="#" title="Introduction to HTML &amp; CSS" aria-label="Introduction to HTML &amp; CSS">INTRO TO HTML &amp; CSS</a>
+    <a href="#" title="Bash Tutorial" aria-label="Bash Tutorial">BASH</a>
+    <a href="#" title="Rust Tutorial" aria-label="Rust Tutorial">RUST</a>
+    <a href="#" title="Web Developer Tools" aria-label="Web Developer Tools">TOOLS</a>
+  </nav>
+</div>
+
+<!-- ================= PAGE LAYOUT ================= -->
+<div class="layout">
+
+  <!-- ---------- LEFT MENU ---------- -->
+  <aside class="leftmenu" aria-label="How To menu">
+    <div class="leftmenu-inner">
+      <!-- HTML-only alternative to the original JavaScript filter: submit a site search. -->
+      <form onsubmit="return false" class="sidebar-search" role="search" method="get">
+        <input type="hidden" name="sitesearch" value="w3schools.com/howto">
+        <input type="search" name="q" placeholder="Search..." aria-label="Search How To tutorials" required>
+      </form>
+      <h2 class="lm-title">HOW TO</h2>
+      <a class="lm-home" href="#" aria-current="page">HowTo Home</a>
+
+      <h2>Menus</h2>
+      <a href="#">Icon Bar</a>
+      <a href="#">Menu Icon</a>
+      <a href="#">Accordion</a>
+      <a href="#">Tabs</a>
+      <a href="#">Vertical Tabs</a>
+      <a href="#">Tab Headers</a>
+      <a href="#">Full Page Tabs</a>
+      <a href="#">Hover Tabs</a>
+      <a href="#">Top Navigation</a>
+      <a href="#">Responsive Topnav</a>
+      <a href="#">Split Navigation</a>
+      <a href="#">Navbar with Icons</a>
+      <a href="#">Search Menu</a>
+      <a href="#">Search Bar</a>
+      <a href="#">Fixed Sidebar</a>
+      <a href="#">Side Navigation</a>
+      <a href="#">Responsive Sidebar</a>
+      <a href="#">Fullscreen Navigation</a>
+      <a href="#">Off-Canvas Menu</a>
+      <a href="#">Hover Sidenav Buttons</a>
+      <a href="#">Sidebar with Icons</a>
+      <a href="#">Horizontal Scroll Menu</a>
+      <a href="#">Vertical Menu</a>
+      <a href="#">Bottom Navigation</a>
+      <a href="#">Responsive Bottom Nav</a>
+      <a href="#">Bottom Border Nav Links</a>
+      <a href="#">Right Aligned Menu Links</a>
+      <a href="#">Centered Menu Link</a>
+      <a href="#">Equal Width Menu Links</a>
+      <a href="#">Fixed Menu</a>
+      <a href="#">Slide Down Bar on Scroll</a>
+      <a href="#">Hide Navbar on Scroll</a>
+      <a href="#">Shrink Navbar on Scroll</a>
+      <a href="#">Sticky Navbar</a>
+      <a href="#">Navbar on Image</a>
+      <a href="#">Hover Dropdowns</a>
+      <a href="#">Click Dropdowns</a>
+      <a href="#">Cascading Dropdown</a>
+      <a href="#">Dropdown in Topnav</a>
+      <a href="#">Dropdown in Sidenav</a>
+      <a href="#">Resp Navbar Dropdown</a>
+      <a href="#">Subnavigation Menu</a>
+      <a href="#">Dropup</a>
+      <a href="#">Mega Menu</a>
+      <a href="#">Mobile Menu</a>
+      <a href="#">Curtain Menu</a>
+      <a href="#">Collapsed Sidebar</a>
+      <a href="#">Collapsed Sidepanel</a>
+      <a href="#">Pagination</a>
+      <a href="#">Breadcrumbs</a>
+      <a href="#">Button Group</a>
+      <a href="#">Vertical Button Group</a>
+      <a href="#">Sticky Social Bar</a>
+      <a href="#">Pill Navigation</a>
+      <a href="#">Responsive Header</a>
+
+      <h2>Images</h2>
+      <a href="#">Slideshow</a>
+      <a href="#">Slideshow Gallery</a>
+      <a href="#">Modal Images</a>
+      <a href="#">Lightbox</a>
+      <a href="#">Responsive Image Grid</a>
+      <a href="#">Image Grid</a>
+      <a href="#">Image Gallery</a>
+      <a href="#">Scrollable Image Gallery</a>
+      <a href="#">Tab Gallery</a>
+      <a href="#">Image Overlay Fade</a>
+      <a href="#">Image Overlay Slide</a>
+      <a href="#">Image Overlay Zoom</a>
+      <a href="#">Image Overlay Title</a>
+      <a href="#">Image Overlay Icon</a>
+      <a href="#">Image Effects</a>
+      <a href="#">Black and White Image</a>
+      <a href="#">Image Text</a>
+      <a href="#">Image Text Blocks</a>
+      <a href="#">Transparent Image Text</a>
+      <a href="#">Full Page Image</a>
+      <a href="#">Form on Image</a>
+      <a href="#">Hero Image</a>
+      <a href="#">Blur Background Image</a>
+      <a href="#">Change Bg on Scroll</a>
+      <a href="#">Side-by-Side Images</a>
+      <a href="#">Rounded Images</a>
+      <a href="#">Avatar Images</a>
+      <a href="#">Responsive Images</a>
+      <a href="#">Center Images</a>
+      <a href="#">Thumbnails</a>
+      <a href="#">Border Around Image</a>
+      <a href="#">Meet the Team</a>
+      <a href="#">Sticky Image</a>
+      <a href="#">Flip an Image</a>
+      <a href="#">Shake an Image</a>
+      <a href="#">Portfolio Gallery</a>
+      <a href="#">Portfolio with Filtering</a>
+      <a href="#">Image Zoom</a>
+      <a href="#">Image Magnifier Glass</a>
+      <a href="#">Image Comparison Slider</a>
+      <a href="#">Favicon</a>
+
+      <h2>Buttons</h2>
+      <a href="#">Alert Buttons</a>
+      <a href="#">Outline Buttons</a>
+      <a href="#">Split Buttons</a>
+      <a href="#">Animated Buttons</a>
+      <a href="#">Fading Buttons</a>
+      <a href="#">Button on Image</a>
+      <a href="#">Social Media Buttons</a>
+      <a href="#">Read More Read Less</a>
+      <a href="#">Loading Buttons</a>
+      <a href="#">Download Buttons</a>
+      <a href="#">Pill Buttons</a>
+      <a href="#">Notification Button</a>
+      <a href="#">Icon Buttons</a>
+      <a href="#">Next/prev Buttons</a>
+      <a href="#">More Button in Nav</a>
+      <a href="#">Block Buttons</a>
+      <a href="#">Text Buttons</a>
+      <a href="#">Round Buttons</a>
+      <a href="#">Scroll To Top Button</a>
+
+      <h2>Forms</h2>
+      <a href="#">Login Form</a>
+      <a href="#">Signup Form</a>
+      <a href="#">Checkout Form</a>
+      <a href="#">Contact Form</a>
+      <a href="#">Social Login Form</a>
+      <a href="#">Register Form</a>
+      <a href="#">Form with Icons</a>
+      <a href="#">Newsletter</a>
+      <a href="#">Stacked Form</a>
+      <a href="#">Responsive Form</a>
+      <a href="#">Popup Form</a>
+      <a href="#">Inline Form</a>
+      <a href="#">Clear Input Field</a>
+      <a href="#">Hide Number Arrows</a>
+      <a href="#">Copy Text to Clipboard</a>
+      <a href="#">Animated Search</a>
+      <a href="#">Search Button</a>
+      <a href="#">Fullscreen Search</a>
+      <a href="#">Input Field in Navbar</a>
+      <a href="#">Login Form in Navbar</a>
+      <a href="#">Custom Checkbox/Radio</a>
+      <a href="#">Custom Select</a>
+      <a href="#">Toggle Switch</a>
+      <a href="#">Check Checkbox</a>
+      <a href="#">Detect Caps Lock</a>
+      <a href="#">Trigger Button on Enter</a>
+      <a href="#">Password Validation</a>
+      <a href="#">Toggle Password Visibility</a>
+      <a href="#">Multiple Step Form</a>
+      <a href="#">Autocomplete</a>
+      <a href="#">Turn off autocomplete</a>
+      <a href="#">Turn off spellcheck</a>
+      <a href="#">File Upload Button</a>
+      <a href="#">Empty Input Validation</a>
+
+      <h2>Filters</h2>
+      <a href="#">Filter List</a>
+      <a href="#">Filter Table</a>
+      <a href="#">Filter Elements</a>
+      <a href="#">Filter Dropdown</a>
+      <a href="#">Sort List</a>
+      <a href="#">Sort Table</a>
+
+      <h2>Tables</h2>
+      <a href="#">Zebra Striped Table</a>
+      <a href="#">Center Tables</a>
+      <a href="#">Full-width Table</a>
+      <a href="#">Nested Table</a>
+      <a href="#">Side-by-side Tables</a>
+      <a href="#">Responsive Tables</a>
+      <a href="#">Comparison Table</a>
+
+      <h2>More</h2>
+      <a href="#">Fullscreen Video</a>
+      <a href="#">Modal Boxes</a>
+      <a href="#">Delete Modal</a>
+      <a href="#">Timeline</a>
+      <a href="#">Scroll Indicator</a>
+      <a href="#">Progress Bars</a>
+      <a href="#">Skill Bar</a>
+      <a href="#">Range Sliders</a>
+      <a href="#">Color Picker</a>
+      <a href="#">Email Field</a>
+      <a href="#">Tooltips</a>
+      <a href="#">Display Element Hover</a>
+      <a href="#">Popups</a>
+      <a href="#">Collapsible</a>
+      <a href="#">Calendar</a>
+      <a href="#">HTML Includes</a>
+      <a href="#">To Do List</a>
+      <a href="#">Loaders</a>
+      <a href="#">Badges</a>
+      <a href="#">Star Rating</a>
+      <a href="#">User Rating</a>
+      <a href="#">Overlay Effect</a>
+      <a href="#">Contact Chips</a>
+      <a href="#">Cards</a>
+      <a href="#">Flip Card</a>
+      <a href="#">Profile Card</a>
+      <a href="#">Product Card</a>
+      <a href="#">Alerts</a>
+      <a href="#">Callout</a>
+      <a href="#">Notes</a>
+      <a href="#">Labels</a>
+      <a href="#">Ribbon</a>
+      <a href="#">Tag Cloud</a>
+      <a href="#">Circles</a>
+      <a href="#">Style HR</a>
+      <a href="#">Coupon</a>
+      <a href="#">List Group</a>
+      <a href="#">List Group with Badges</a>
+      <a href="#">List Without Bullets</a>
+      <a href="#">Responsive Text</a>
+      <a href="#">Cutout Text</a>
+      <a href="#">Glowing Text</a>
+      <a href="#">Fixed Footer</a>
+      <a href="#">Sticky Element</a>
+      <a href="#">Equal Height</a>
+      <a href="#">Clearfix</a>
+      <a href="#">Responsive Floats</a>
+      <a href="#">Snackbar</a>
+      <a href="#">Fullscreen Window</a>
+      <a href="#">Scroll Drawing</a>
+      <a href="#">Smooth Scroll</a>
+      <a href="#">Gradient Bg Scroll</a>
+      <a href="#">Sticky Header</a>
+      <a href="#">Shrink Header on Scroll</a>
+      <a href="#">Pricing Table</a>
+      <a href="#">Parallax</a>
+      <a href="#">Aspect Ratio</a>
+      <a href="#">Responsive Iframes</a>
+      <a href="#">Toggle Like/Dislike</a>
+      <a href="#">Toggle Hide/Show</a>
+      <a href="#">Toggle Dark Mode</a>
+      <a href="#">Toggle Text</a>
+      <a href="#">Toggle Class</a>
+      <a href="#">Add Class</a>
+      <a href="#">Remove Class</a>
+      <a href="#">Change Class</a>
+      <a href="#">Active Class</a>
+      <a href="#">Tree View</a>
+      <a href="#">Remove Decimals</a>
+      <a href="#">Remove Property</a>
+      <a href="#">Offline Detection</a>
+      <a href="#">Find Hidden Element</a>
+      <a href="#">Redirect Webpage</a>
+      <a href="#">Format a Number</a>
+      <a href="#">Zoom Hover</a>
+      <a href="#">Flip Box</a>
+      <a href="#">Center Vertically</a>
+      <a href="#">Center Button in DIV</a>
+      <a href="#">Center a List</a>
+      <a href="#">Transition on Hover</a>
+      <a href="#">Arrows</a>
+      <a href="#">Shapes</a>
+      <a href="#">Download Link</a>
+      <a href="#">Full Height Element</a>
+      <a href="#">Browser Window</a>
+      <a href="#">Custom Scrollbar</a>
+      <a href="#">Hide Scrollbar</a>
+      <a href="#">Show/Force Scrollbar</a>
+      <a href="#">Device Look</a>
+      <a href="#">Contenteditable Border</a>
+      <a href="#">Placeholder Color</a>
+      <a href="#">Disable Resizing of Textarea</a>
+      <a href="#">Disable Text Selection</a>
+      <a href="#">Text Selection Color</a>
+      <a href="#">Bullet Color</a>
+      <a href="#">Vertical Line</a>
+      <a href="#">Dividers</a>
+      <a href="#">Text Divider</a>
+      <a href="#">Animate Icons</a>
+      <a href="#">Countdown Timer</a>
+      <a href="#">Typewriter</a>
+      <a href="#">Coming Soon Page</a>
+      <a href="#">Chat Messages</a>
+      <a href="#">Popup Chat Window</a>
+      <a href="#">Split Screen</a>
+      <a href="#">Testimonials</a>
+      <a href="#">Section Counter</a>
+      <a href="#">Quotes Slideshow</a>
+      <a href="#">Closable List Items</a>
+      <a href="#">Typical Device Breakpoints</a>
+      <a href="#">Draggable HTML Element</a>
+      <a href="#">JS Media Queries</a>
+      <a href="#">Syntax Highlighter</a>
+      <a href="#">JS Animations</a>
+      <a href="#">JS String Length</a>
+      <a href="#">JS Exponentiation</a>
+      <a href="#">JS Default Parameters</a>
+      <a href="#">JS Random Number</a>
+      <a href="#">JS Sort Numeric Array</a>
+      <a href="#">JS Spread Operator</a>
+      <a href="#">JS Scroll Into View</a>
+      <a href="#">Get Current Date</a>
+      <a href="#">Get Current URL</a>
+      <a href="#">Get Current Screen Size</a>
+      <a href="#">Get Iframe Elements</a>
+
+      <h2>Website</h2>
+      <a href="#">Create a Website</a>
+      <a href="#">Make a Website</a>
+      <a href="#">Make a Static Website</a>
+      <a href="#">Host a Static Website</a>
+      <a href="#">Make a Website (W3.CSS)</a>
+      <a href="#">Make a Website (BS3)</a>
+      <a href="#">Make a Website (BS4)</a>
+      <a href="#">Make a Website (BS5)</a>
+      <a href="#">Create and View a Website</a>
+      <a href="#">Create a Link Tree Website</a>
+      <a href="#">Create a Portfolio</a>
+      <a href="#">Create a Resume</a>
+      <a href="#">Make a Restaurant Website</a>
+      <a href="#">Make a Business Website</a>
+      <a href="#">Make a WebBook</a>
+      <a href="#">Center Website</a>
+      <a href="#">Contact Section</a>
+      <a href="#">About Page</a>
+      <a href="#">Big Header</a>
+      <a href="#">Example Website</a>
+
+      <h2>Grid</h2>
+      <a href="#">2 Column Layout</a>
+      <a href="#">3 Column Layout</a>
+      <a href="#">4 Column Layout</a>
+      <a href="#">Expanding Grid</a>
+      <a href="#">List Grid View</a>
+      <a href="#">Mixed Column Layout</a>
+      <a href="#">Column Cards</a>
+      <a href="#">Zig Zag Layout</a>
+      <a href="#">Blog Layout</a>
+
+      <h2>Google</h2>
+      <a href="#">Google Charts</a>
+      <a href="#">Google Fonts</a>
+      <a href="#">Google Font Pairings</a>
+      <a href="#">Google Set up Analytics</a>
+
+      <h2>Converters</h2>
+      <a href="#">Convert Weight</a>
+      <a href="#">Convert Temperature</a>
+      <a href="#">Convert Length</a>
+      <a href="#">Convert Speed</a>
+
+      <h2>Blog</h2>
+      <a href="#">Get a Developer Job</a>
+      <a href="#">Become a Front-End Dev.</a>
+      <a href="#">Hire Developers</a>
+    </div>
+  </aside>
+
+  <!-- ---------- MAIN CONTENT ---------- -->
+  <main class="content" id="main">
+
+    <div class="leaderboard" role="img" aria-label="Reserved advertisement space"></div>
+    <!-- Real links work without JavaScript. The chain link opens the reference. -->
+    <nav class="share" aria-label="Share reference page">
+      <span>SHARE</span>
+      <a href="#" aria-label="Share reference on X"><i class="fa-brands fa-x-twitter"></i></a>
+      <a href="#" aria-label="Share reference on Facebook"><i class="fa-brands fa-facebook"></i></a>
+      <a href="#" aria-label="Share reference on LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+      <a href="#" aria-label="Open original reference"><i class="fa fa-link"></i></a>
+    </nav>
+    <h1>W3Schools <span class="color_h1">How To</span></h1>
+    <nav class="howtopag" aria-label="How To tutorial pages">
+      <span class="howtopag_item pagdisabled" aria-label="Previous page unavailable">&#10094;</span>
+      <a class="howtopag_item pagactive" href="#" aria-current="page">1</a>
+      <a class="howtopag_item" href="#">2</a>
+      <a class="howtopag_item" href="#">3</a>
+      <a class="howtopag_item" href="#">4</a>
+      <a class="howtopag_item" href="#">5</a>
+      <a class="howtopag_item" href="#">6</a>
+      <a class="howtopag_item" href="#">7</a>
+      <a class="howtopag_item" href="#">8</a>
+      <a class="howtopag_item" href="#" aria-label="Next page">&#10095;</a>
+    </nav>
+    <hr>
+    <p class="intro">Code snippets for HTML, CSS and JavaScript.</p>
+    <hr>
+
+    <div class="howtocontainer">
+    <!-- ===== 1. Slideshow ===== -->
+    <section class="demo" id="slideshow">
+      <h2><a href="#">Slideshow</a></h2>
+      <div class="pager ss">
+        <input type="radio" name="ss" id="ss-1" class="hidden-input" checked aria-label="Show SS image 1">
+        <input type="radio" name="ss" id="ss-2" class="hidden-input" aria-label="Show SS image 2">
+        <input type="radio" name="ss" id="ss-3" class="hidden-input" aria-label="Show SS image 3">
+        <input type="radio" name="ss" id="ss-4" class="hidden-input" aria-label="Show SS image 4">
+
+        <div class="pages">
+          <div class="slide fade">
+            <div class="ss-num">1 / 4</div>
+            <img src="assets/img_nature_wide.jpg" alt="Nature" width="1000" height="350">
+            <div class="ss-text">Caption Text</div>
+            <label class="ss-prev" for="ss-4">&#10094;</label><label class="ss-next" for="ss-2">&#10095;</label>
+          </div>
+          <div class="slide fade">
+            <div class="ss-num">2 / 4</div>
+            <img src="assets/img_snow_wide.jpg" alt="Snow" width="1000" height="350">
+            <div class="ss-text">Caption Two</div>
+            <label class="ss-prev" for="ss-1">&#10094;</label><label class="ss-next" for="ss-3">&#10095;</label>
+          </div>
+          <div class="slide fade">
+            <div class="ss-num">3 / 4</div>
+            <img src="assets/img_mountains_wide.jpg" alt="Mountains" width="1000" height="350">
+            <div class="ss-text">Caption Three</div>
+            <label class="ss-prev" for="ss-2">&#10094;</label><label class="ss-next" for="ss-4">&#10095;</label>
+          </div>
+          <div class="slide fade">
+            <div class="ss-num">4 / 4</div>
+            <img src="assets/img_lights_wide.jpg" alt="Lights" width="1000" height="350">
+            <div class="ss-text">Caption Four</div>
+            <label class="ss-prev" for="ss-3">&#10094;</label><label class="ss-next" for="ss-1">&#10095;</label>
+          </div>
+        </div>
+
+        <div class="nav dots">
+          <label for="ss-1" title="slide 1"></label>
+          <label for="ss-2" title="slide 2"></label>
+          <label for="ss-3" title="slide 3"></label>
+          <label for="ss-4" title="slide 4"></label>
+        </div>
+      </div>
+      <p class="learn-wrap"><a class="learn" href="#">Learn How To &raquo;</a></p>
+    </section>
+
+    <!-- ===== 2. Login Form ===== -->
+    <section class="demo" id="login-form">
+      <h2><a href="#">Login Form</a></h2>
+      <input type="checkbox" id="login-modal" class="modal-toggle hidden-input" aria-label="Login">
+      <label class="btn-form" for="login-modal">Login</label>
+
+      <div class="modal">
+        <form onsubmit="return false" class="modal-content animate">
+          <div class="imgcontainer">
+            <label for="login-modal" class="close" title="Close Modal">&times;</label>
+            <img src="assets/img_avatar2.png" alt="Avatar" class="avatar" width="499" height="498">
+          </div>
+          <div class="container">
+            <label for="uname"><b>Username</b></label>
+            <input type="text" id="uname" placeholder="Enter Username" name="uname">
+            <label for="psw"><b>Password</b></label>
+            <input type="password" id="psw" placeholder="Enter Password" name="psw">
+            <button type="button" class="btn-form wide">Login</button>
+            <label class="remember"><input type="checkbox" checked="checked" name="remember"> Remember me</label>
+          </div>
+          <div class="container gray">
+            <label for="login-modal" class="cancelbtn">Cancel</label>
+            <span class="psw">Forgot <a href="#">password?</a></span>
+          </div>
+        </form>
+      </div>
+      <p class="learn-wrap"><a class="learn" href="#">Learn How To &raquo;</a></p>
+    </section>
+
+    <!-- ===== 3. Accordion ===== -->
+    <section class="demo" id="accordion">
+      <h2><a href="#">Accordion</a></h2>
+      <details class="acc" open>
+        <summary>Section 1</summary>
+        <div class="acc-panel"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p></div>
+      </details>
+      <details class="acc">
+        <summary>Section 2</summary>
+        <div class="acc-panel"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p></div>
+      </details>
+      <details class="acc">
+        <summary>Section 3</summary>
+        <div class="acc-panel"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p></div>
+      </details>
+      <p class="learn-wrap"><a class="learn" href="#">Learn How To &raquo;</a></p>
+    </section>
+
+    <!-- ===== 4. Hover Dropdowns ===== -->
+    <section class="demo" id="hover-dropdowns">
+      <h2><a href="#">Hover Dropdowns</a></h2>
+      <div class="dropdown hover-dd">
+        <button type="button" class="dropbtn green">Hover</button>
+        <div class="dropdown-content">
+          <a href="#">Link 1</a>
+          <a href="#">Link 2</a>
+          <a href="#">Link 3</a>
+        </div>
+      </div>
+      <div class="dd-space"></div>
+      <p class="learn-wrap"><a class="learn" href="#">Learn How To &raquo;</a></p>
+    </section>
+
+    <aside class="mid-ad" aria-label="Reserved advertisement space"><a class="remove-ads" href="#">REMOVE ADS</a></aside>
+
+    <!-- ===== 5. Click Dropdowns ===== -->
+    <section class="demo" id="click-dropdowns">
+      <h2><a href="#">Click Dropdowns</a></h2>
+      <div class="dropdown click-dd">
+        <input type="checkbox" id="dd-click" class="dd-toggle hidden-input" aria-label="Click">
+        <label class="dropbtn blue" for="dd-click">Click</label>
+        <div class="dropdown-content">
+          <a href="#">Link 1</a>
+          <a href="#">Link 2</a>
+          <a href="#">Link 3</a>
+        </div>
+      </div>
+      <div class="dd-space"></div>
+      <p class="learn-wrap"><a class="learn" href="#">Learn How To &raquo;</a></p>
+    </section>
+
+    <!-- ===== 6. Side Navigation ===== -->
+    <section class="demo" id="side-navigation">
+      <h2><a href="#">Side Navigation</a></h2>
+      <input type="checkbox" id="sn-a" class="hidden-input sn-toggle" aria-label="Sidenav overlay">
+      <input type="checkbox" id="sn-b" class="hidden-input sn-toggle" aria-label="Sidenav with opacity">
+
+      <div class="sidenav">
+        <label class="closebtn" for="sn-a">&times;</label>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Clients</a>
+        <a href="#">Contact</a>
+      </div>
+      <div class="sidenav sidenav-opacity">
+        <label class="closebtn" for="sn-b">&times;</label>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Clients</a>
+        <a href="#">Contact</a>
+      </div>
+
+      <label class="btn-plain" for="sn-a">Sidenav overlay</label>
+      <label class="btn-plain" for="sn-b">Sidenav w/opacity</label>
+      <p class="learn-wrap"><a class="learn" href="#">Learn How To &raquo;</a></p>
+    </section>
+
+    <!-- ===== 7. Fixed Sidebar ===== -->
+    <section class="demo" id="fixed-sidebar">
+      <h2><a href="#">Fixed Sidebar</a></h2>
+      <!-- The original uses iframes; these are inline mock frames built with CSS only -->
+      <div class="fixed-demo-row">
+      <div class="frame mini-fixed">
+        <div class="mini-side">
+          <a href="#" class="active">Home</a>
+          <a href="#">News</a>
+          <a href="#">Contact</a>
+          <a href="#">About</a>
+        </div>
+        <div class="mini-main">
+          <h2>Full Sidebar</h2>
+          <p>This sidebar is of full height (100%) and always shown.</p>
+          <p>Scroll down the page to see the result.</p>
+          <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiendi mea an.</p>
+        </div>
+      </div>
+      <div class="frame mini-fixed mini-narrow">
+        <div class="mini-side">
+          <a href="#" class="active">Home</a>
+          <a href="#">News</a>
+          <a href="#">Contact</a>
+          <a href="#">About</a>
+        </div>
+        <div class="mini-main">
+          <h2>Auto Sidebar</h2>
+          <p>This sidebar is as tall as its content (the links), and is always shown.</p><p>Scroll this window to see the fixed effect.</p>
+        </div>
+      </div>
+      </div><!-- /.fixed-demo-row -->
+      <p class="learn-wrap"><a class="learn" href="#">Learn How To &raquo;</a></p>
+    </section>
+
+    <!-- ===== 8. Modal Box ===== -->
+    <section class="demo" id="modal-box">
+      <h2><a href="#">Modal Box</a></h2>
+      <input type="checkbox" id="modal-box-toggle" class="modal-toggle hidden-input" aria-label="Open Modal">
+      <label class="btn-plain" for="modal-box-toggle">Open Modal</label>
+
+      <div class="modal">
+        <div class="modal-content mb-content">
+          <div class="mb-header">
+            <label class="close mb-close" for="modal-box-toggle">&times;</label>
+            <h2>Modal Header</h2>
+          </div>
+          <div class="mb-body">
+            <p>Hello World!</p>
+            <p>Modals are awesome!</p>
+            <p>Go Back To <a href="#">W3 How TO</a> Examples</p>
+          </div>
+          <div class="mb-footer"><h3>Modal Footer</h3></div>
+        </div>
+      </div>
+      <p class="learn-wrap"><a class="learn" href="#">Learn How To &raquo;</a></p>
+    </section>
+
+    <!-- ===== 9. Modal Image ===== -->
+    <section class="demo" id="modal-image">
+      <h2><a href="#">Modal Image</a></h2>
+      <input type="checkbox" id="modal-img-toggle" class="modal-toggle hidden-input" aria-label="Open or close Snow image">
+      <label for="modal-img-toggle" class="myimg-wrap">
+        <img src="assets/img_snow.jpg" alt="Snow" class="myimg" width="600" height="400">
+      </label>
+      <div class="modal modal-dark">
+        <label class="close img-close" for="modal-img-toggle">&times;</label>
+        <img class="modal-img animate" src="assets/img_snow.jpg" alt="Snow" width="600" height="400">
+        <div class="modal-caption">Snow</div>
+      </div>
+      <p class="learn-wrap"><a class="learn" href="#">Learn How To &raquo;</a></p>
+    </section>
+
+    <!-- ===== 10. Lightbox ===== -->
+    <section class="demo" id="lightbox">
+      <h2><a href="#">Lightbox</a></h2>
+      <div class="lb">
+        <input type="radio" name="lb" id="lb-0" class="hidden-input" checked aria-label="Close lightbox">
+        <input type="radio" name="lb" id="lb-1" class="hidden-input" aria-label="Show LB image 1">
+        <input type="radio" name="lb" id="lb-2" class="hidden-input" aria-label="Show LB image 2">
+        <input type="radio" name="lb" id="lb-3" class="hidden-input" aria-label="Show LB image 3">
+
+        <div class="lb-row">
+          <div class="lb-col"><label for="lb-1"><img src="assets/img_nature.jpg" alt="Nature" width="600" height="400"></label></div>
+          <div class="lb-col"><label for="lb-2"><img src="assets/img_snow.jpg" alt="Snow" width="600" height="400"></label></div>
+          <div class="lb-col"><label for="lb-3"><img src="assets/img_mountains.jpg" alt="Mountains" width="600" height="400"></label></div>
+        </div>
+
+        <div class="lb-modal">
+          <label class="lb-close" for="lb-0">&times;</label>
+          <div class="lb-content">
+            <div class="lb-slide"><img src="assets/img_nature.jpg" alt="Nature and sunrise" width="600" height="400"><div class="lb-cap">Nature and sunrise</div><label class="lb-prev" for="lb-3">&#10094;</label><label class="lb-next" for="lb-2">&#10095;</label></div>
+            <div class="lb-slide"><img src="assets/img_snow.jpg" alt="Snow" width="600" height="400"><div class="lb-cap">Snow</div><label class="lb-prev" for="lb-1">&#10094;</label><label class="lb-next" for="lb-3">&#10095;</label></div>
+            <div class="lb-slide"><img src="assets/img_mountains.jpg" alt="Mountains and fjords" width="600" height="400"><div class="lb-cap">Mountains and fjords</div><label class="lb-prev" for="lb-2">&#10094;</label><label class="lb-next" for="lb-1">&#10095;</label></div>
+            <div class="lb-thumbs">
+              <label for="lb-1"><img src="assets/img_nature.jpg" alt="Nature and sunrise" width="600" height="400"></label>
+              <label for="lb-2"><img src="assets/img_snow.jpg" alt="Snow" width="600" height="400"></label>
+              <label for="lb-3"><img src="assets/img_mountains.jpg" alt="Mountains and fjords" width="600" height="400"></label>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p class="learn-wrap"><a class="learn" href="#">Learn How To &raquo;</a></p>
+    </section>
+
+    <!-- ===== 11. Slideshow Gallery ===== -->
+    <section class="demo" id="slideshow-gallery">
+      <h2><a href="#">Slideshow Gallery</a></h2>
+      <div class="pager sg">
+        <input type="radio" name="sg" id="sg-1" class="hidden-input" checked aria-label="Show SG image 1">
+        <input type="radio" name="sg" id="sg-2" class="hidden-input" aria-label="Show SG image 2">
+        <input type="radio" name="sg" id="sg-3" class="hidden-input" aria-label="Show SG image 3">
+        <input type="radio" name="sg" id="sg-4" class="hidden-input" aria-label="Show SG image 4">
+        <input type="radio" name="sg" id="sg-5" class="hidden-input" aria-label="Show SG image 5">
+        <input type="radio" name="sg" id="sg-6" class="hidden-input" aria-label="Show SG image 6">
+
+        <div class="pages">
+          <div class="slide"><div class="ss-num">1 / 6</div><img src="assets/img_woods_wide.jpg" alt="The Woods" width="1000" height="350"><div class="sg-cap">The Woods</div><label class="ss-prev" for="sg-6">&#10094;</label><label class="ss-next" for="sg-2">&#10095;</label></div>
+          <div class="slide"><div class="ss-num">2 / 6</div><img src="assets/img_5terre_wide.jpg" alt="Cinque Terre" width="1000" height="350"><div class="sg-cap">Cinque Terre</div><label class="ss-prev" for="sg-1">&#10094;</label><label class="ss-next" for="sg-3">&#10095;</label></div>
+          <div class="slide"><div class="ss-num">3 / 6</div><img src="assets/img_mountains_wide.jpg" alt="Mountains and fjords" width="1000" height="350"><div class="sg-cap">Mountains and fjords</div><label class="ss-prev" for="sg-2">&#10094;</label><label class="ss-next" for="sg-4">&#10095;</label></div>
+          <div class="slide"><div class="ss-num">4 / 6</div><img src="assets/img_lights_wide.jpg" alt="Northern Lights" width="1000" height="350"><div class="sg-cap">Northern Lights</div><label class="ss-prev" for="sg-3">&#10094;</label><label class="ss-next" for="sg-5">&#10095;</label></div>
+          <div class="slide"><div class="ss-num">5 / 6</div><img src="assets/img_nature_wide.jpg" alt="Nature and sunrise" width="1000" height="350"><div class="sg-cap">Nature and sunrise</div><label class="ss-prev" for="sg-4">&#10094;</label><label class="ss-next" for="sg-6">&#10095;</label></div>
+          <div class="slide"><div class="ss-num">6 / 6</div><img src="assets/img_snow_wide.jpg" alt="Snowy Mountains" width="1000" height="350"><div class="sg-cap">Snowy Mountains</div><label class="ss-prev" for="sg-5">&#10094;</label><label class="ss-next" for="sg-1">&#10095;</label></div>
+        </div>
+
+        <div class="nav sg-thumbs">
+          <label for="sg-1"><img src="assets/img_woods.jpg" alt="The Woods" width="600" height="400"></label>
+          <label for="sg-2"><img src="assets/img_5terre.jpg" alt="Cinque Terre" width="600" height="400"></label>
+          <label for="sg-3"><img src="assets/img_mountains.jpg" alt="Mountains and fjords" width="600" height="400"></label>
+          <label for="sg-4"><img src="assets/img_lights.jpg" alt="Northern Lights" width="600" height="400"></label>
+          <label for="sg-5"><img src="assets/img_nature.jpg" alt="Nature and sunrise" width="600" height="400"></label>
+          <label for="sg-6"><img src="assets/img_snow.jpg" alt="Snowy Mountains" width="600" height="400"></label>
+        </div>
+      </div>
+      <p class="learn-wrap"><a class="learn" href="#">Learn How To &raquo;</a></p>
+    </section>
+
+    <!-- ===== 12. Image Hover Overlay ===== -->
+    <section class="demo" id="image-overlay">
+      <h2><a href="#">Image Hover Overlay</a></h2>
+      <div class="ov-container">
+        <img src="assets/img_avatar3.png" alt="Avatar" class="ov-image" width="499" height="498">
+        <div class="ov-overlay"><div class="ov-text">Hello World</div></div>
+      </div>
+      <p class="learn-wrap"><a class="learn" href="#">Learn How To &raquo;</a></p>
+    </section>
+
+    <!-- ===== 13. Tabs ===== -->
+    <section class="demo" id="tabs">
+      <h2><a href="#">Tabs</a></h2>
+      <div class="pager tabs">
+        <input type="radio" name="tabs" id="tab-1" class="hidden-input" checked aria-label="London">
+        <input type="radio" name="tabs" id="tab-2" class="hidden-input" aria-label="Paris">
+        <input type="radio" name="tabs" id="tab-3" class="hidden-input" aria-label="Tokyo">
+
+        <div class="nav tab">
+          <label for="tab-1">London</label>
+          <label for="tab-2">Paris</label>
+          <label for="tab-3">Tokyo</label>
+        </div>
+        <div class="pages">
+          <div class="tabcontent"><h3>London</h3><p>London is the capital city of England.</p></div>
+          <div class="tabcontent"><h3>Paris</h3><p>Paris is the capital of France.</p></div>
+          <div class="tabcontent"><h3>Tokyo</h3><p>Tokyo is the capital of Japan.</p></div>
+        </div>
+      </div>
+      <p class="learn-wrap"><a class="learn" href="#">Learn How To &raquo;</a></p>
+    </section>
+
+    <!-- ===== 14. Vertical Tabs ===== -->
+    <section class="demo" id="vertical-tabs">
+      <h2><a href="#">Vertical Tabs</a></h2>
+      <div class="pager vtabs">
+        <input type="radio" name="vt" id="vt-1" class="hidden-input" checked aria-label="London">
+        <input type="radio" name="vt" id="vt-2" class="hidden-input" aria-label="Paris">
+        <input type="radio" name="vt" id="vt-3" class="hidden-input" aria-label="Tokyo">
+
+        <div class="nav vtab-nav">
+          <label for="vt-1">London</label>
+          <label for="vt-2">Paris</label>
+          <label for="vt-3">Tokyo</label>
+        </div>
+        <div class="pages vtab-pages">
+          <div class="vtabcontent"><h3>London</h3><p>London is the capital city of England.</p></div>
+          <div class="vtabcontent"><h3>Paris</h3><p>Paris is the capital of France.</p></div>
+          <div class="vtabcontent"><h3>Tokyo</h3><p>Tokyo is the capital of Japan.</p></div>
+        </div>
+      </div>
+      <p class="learn-wrap"><a class="learn" href="#">Learn How To &raquo;</a></p>
+    </section>
+
+    <!-- ===== 15. Tab Image Gallery ===== -->
+    <section class="demo" id="tab-image-gallery">
+      <h2><a href="#">Tab Image Gallery</a></h2>
+      <div class="pager has-none tg">
+        <input type="radio" name="tg" id="tg-0" class="hidden-input" aria-label="Close expanded gallery image">
+        <input type="radio" name="tg" id="tg-1" class="hidden-input" checked aria-label="Show TG image 1">
+        <input type="radio" name="tg" id="tg-2" class="hidden-input" aria-label="Show TG image 2">
+        <input type="radio" name="tg" id="tg-3" class="hidden-input" aria-label="Show TG image 3">
+
+        <div class="nav tg-row">
+          <label for="tg-1"><img src="assets/img_nature.jpg" alt="Nature" width="600" height="400"></label>
+          <label for="tg-2"><img src="assets/img_snow.jpg" alt="Snow" width="600" height="400"></label>
+          <label for="tg-3"><img src="assets/img_lights.jpg" alt="Lights" width="600" height="400"></label>
+        </div>
+
+        <div class="pages tg-pages">
+          <div class="tg-content"><img src="assets/img_nature.jpg" alt="Nature" width="600" height="400"><label class="tg-close" for="tg-0">&times;</label><div class="tg-text">Nature</div></div>
+          <div class="tg-content"><img src="assets/img_snow.jpg" alt="Snow" width="600" height="400"><label class="tg-close" for="tg-0">&times;</label><div class="tg-text">Snow</div></div>
+          <div class="tg-content"><img src="assets/img_lights.jpg" alt="Lights" width="600" height="400"><label class="tg-close" for="tg-0">&times;</label><div class="tg-text">Northern Lights</div></div>
+        </div>
+      </div>
+      <p class="learn-wrap"><a class="learn" href="#">Learn How To &raquo;</a></p>
+    </section>
+
+    <!-- ===== 16. Alert Buttons ===== -->
+    <section class="demo" id="alert-buttons">
+      <h2><a href="#">Alert Buttons</a></h2>
+      <button type="button" class="abtn success">Success</button>
+      <button type="button" class="abtn info">Info</button>
+      <button type="button" class="abtn warning">Warning</button>
+      <button type="button" class="abtn danger">Danger</button>
+      <button type="button" class="abtn default">Default</button>
+      <p class="learn-wrap"><a class="learn" href="#">Learn How To &raquo;</a></p>
+    </section>
+
+    <!-- ===== 17. Outline Buttons ===== -->
+    <section class="demo" id="outline-buttons">
+      <h2><a href="#">Outline Buttons</a></h2>
+      <button type="button" class="obtn success">Success</button>
+      <button type="button" class="obtn info">Info</button>
+      <button type="button" class="obtn warning">Warning</button>
+      <button type="button" class="obtn danger">Danger</button>
+      <button type="button" class="obtn default">Default</button>
+      <p class="learn-wrap"><a class="learn" href="#">Learn How To &raquo;</a></p>
+    </section>
+
+    <!-- ===== 18. Top Navigation ===== -->
+    <section class="demo" id="top-navigation">
+      <h2><a href="#">Top Navigation</a></h2>
+      <div class="demo-topnav">
+        <a class="active" href="#">Home</a>
+        <a href="#">News</a>
+        <a href="#">Contact</a>
+      </div>
+      <p class="learn-wrap"><a class="learn" href="#">Learn How To &raquo;</a></p>
+    </section>
+
+    <!-- ===== 19. Responsive Top Navigation ===== -->
+    <section class="demo" id="responsive-topnav">
+      <h2><a href="#">Responsive Top Navigation</a></h2>
+      <p>Resize the browser window to see the effect:</p>
+      <!-- Drag the bottom-right corner of this frame to resize it (CSS resize + container query) -->
+      <div class="rt-frame">
+        <input type="checkbox" id="rt-toggle" class="hidden-input rt-toggle" aria-label="Toggle responsive navigation">
+        <div class="rt-bar">
+          <a class="active rt-link" href="#">Home</a>
+          <a class="rt-link" href="#">News</a>
+          <a class="rt-link" href="#">Contact</a>
+          <a class="rt-link" href="#">About</a>
+          <label class="rt-icon" for="rt-toggle" title="Menu"><i class="fa fa-bars"></i></label>
+        </div>
+        <div class="rt-body">
+          <h3>Responsive Topnav Example</h3>
+          <p>Resize the browser window to see how it works.</p>
+        </div>
+      </div>
+      <p class="learn-wrap"><a class="learn" href="#">Learn How To &raquo;</a></p>
+    </section>
+
+    <!-- ===== 20. Fullscreen Navigation ===== -->
+    <section class="demo" id="fullscreen-navigation">
+      <h2><a href="#">Fullscreen Navigation</a></h2>
+      <input type="checkbox" id="fs-a" class="hidden-input fs-toggle" aria-label="Slide right navigation">
+      <input type="checkbox" id="fs-b" class="hidden-input fs-toggle" aria-label="Slide down navigation">
+
+      <div class="overlay overlay-right">
+        <label class="overlay-close" for="fs-a">&times;</label>
+        <div class="overlay-content">
+          <a href="#">About</a>
+          <a href="#">Services</a>
+          <a href="#">Clients</a>
+          <a href="#">Contact</a>
+        </div>
+      </div>
+      <div class="overlay overlay-down">
+        <label class="overlay-close" for="fs-b">&times;</label>
+        <div class="overlay-content">
+          <a href="#">About</a>
+          <a href="#">Services</a>
+          <a href="#">Clients</a>
+          <a href="#">Contact</a>
+        </div>
+      </div>
+
+      <label class="btn-plain" for="fs-a">Slide Right</label>
+      <label class="btn-plain" for="fs-b">Slide Down</label>
+      <p class="learn-wrap"><a class="learn" href="#">Learn How To &raquo;</a></p>
+    </section>
+
+    <!-- ===== 21. Login Form in Navbar ===== -->
+    <section class="demo" id="login-navbar">
+      <h2><a href="#">Login Form in Navbar</a></h2>
+      <div class="demo-topnav login-nav">
+        <a class="active" href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+        <form onsubmit="return false" class="login-container">
+          <input type="text" placeholder="Username" name="username" aria-label="Username">
+          <input type="password" placeholder="Password" name="psw" aria-label="Password">
+          <button type="button">Login</button>
+        </form>
+      </div>
+      <p class="learn-wrap"><a class="learn" href="#">Learn How To &raquo;</a></p>
+    </section>
+
+    <!-- ===== 22. Change Background on Scroll ===== -->
+    <section class="demo" id="change-bg-scroll">
+      <h2><a href="#">Change Background on Scroll</a></h2>
+      <!-- CSS-only: gambar latar berganti saat frame di-scroll -->
+      <div class="frame scroll-frame">
+        <div class="bg-scroller" tabindex="0">
+          <div class="bg-image img1"></div>
+          <div class="bg-image img2"></div>
+          <div class="bg-image img3"></div>
+          <div class="bg-image img4"></div>
+          <div class="bg-image img5"></div>
+          <div class="bg-image img6"></div>
+        </div>
+        <div class="bg-text">TEXT</div>
+      </div>
+      <p class="learn-wrap"><a class="learn" href="#">Learn How To &raquo;</a></p>
+    </section>
+
+    </div><!-- /.howtocontainer -->
+
+    <!-- ===== Spaces promo ===== -->
+    <aside class="spaces-promo">
+      <p>Ever heard about <b>W3Schools Spaces</b>? Here you can create your own website, or save your favorite code snippets.</p>
+      <a class="spaces-btn" href="#" title="Get Started With W3Schools Spaces" aria-label="Get Started With W3Schools Spaces">Get started for free &#10095;</a>
+    </aside>
+
+    <nav class="howtopag" aria-label="How To tutorial pages">
+      <span class="howtopag_item pagdisabled" aria-label="Previous page unavailable">&#10094;</span>
+      <a class="howtopag_item pagactive" href="#" aria-current="page">1</a>
+      <a class="howtopag_item" href="#">2</a>
+      <a class="howtopag_item" href="#">3</a>
+      <a class="howtopag_item" href="#">4</a>
+      <a class="howtopag_item" href="#">5</a>
+      <a class="howtopag_item" href="#">6</a>
+      <a class="howtopag_item" href="#">7</a>
+      <a class="howtopag_item" href="#">8</a>
+      <a class="howtopag_item" href="#" aria-label="Next page">&#10095;</a>
+    </nav>
+  </main>
+
+  <!-- ---------- RIGHT COLUMN ---------- -->
+  <aside class="rightcol" aria-label="Advertisements and courses">
+    <div class="right-inner">
+      <a class="course-banner" href="#">
+        <img src="assets/img_course_learnit_160.webp" width="160" height="300" alt="W3Schools courses: Learn it. Get certified. Get hired.">
+      </a>
+      <div class="right-social" aria-label="W3Schools social accounts">
+        <a href="#" title="YouTube" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+        <a href="#" title="LinkedIn" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="#" title="Discord" aria-label="Discord"><i class="fa-brands fa-discord"></i></a>
+        <a href="#" title="Facebook" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+        <a href="#" title="Instagram" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#" title="TikTok" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+      </div>
+      <div class="ad-box">
+        <a class="remove-ads" href="#">REMOVE ADS</a>
+        <div class="ad-placeholder"><img class="ad-img" src="assets/img_iklan.webp" alt="Iklan" width="242" height="156"></div>
+      </div>
+    </div>
+  </aside>
+</div>
+
+<!-- ================= FOOTER PROMOTIONS + QUICK LINKS ================= -->
+<section class="footer-promos" aria-label="W3Schools learning tools">
+      <div class="adventure-card">
+        <span class="badge-new">New</span>
+        <h2>Learn in Adventure Mode <small>W3Schools Adventure App</small></h2>
+        <p>Coding fundamentals as bite-sized lessons and challenges.</p>
+        <a class="store-btn" href="#"><small>Download on the</small>App Store</a>
+        <a class="store-btn" href="#"><small>GET IT ON</small>Google Play</a>
+        <a class="store-btn" href="#"><small>TRY NOW IN</small>Browser</a>
+      </div>
+
+      <div class="progress-card">
+        <span class="badge-free">Free account</span>
+        <h2>Track your progress</h2>
+        <ul class="stats">
+          <li><span>XP earned</span><b>0</b></li>
+          <li><span>Day streak</span><b>0</b></li>
+          <li><span>Spaces</span><b>0</b></li>
+          <li><span>League</span><b>&mdash;</b></li>
+        </ul>
+        <a class="signin-track" href="#">Sign in to track progress</a>
+      </div>
+
+</section>
+<nav class="bottombar" aria-label="Quick links">
+  <a class="bb-url" href="#" aria-label="W3Schools home"><span class="footer-logo" aria-hidden="true"></span></a>
+  <a href="#" title="Become a PLUS user and unlock powerful features" aria-label="Become a PLUS user and unlock powerful features">PLUS</a>
+  <a href="#" title="Get your own website with W3Schools Spaces" aria-label="Get your own website with W3Schools Spaces">SPACES</a>
+  <a href="#" title="Document your knowledge by getting certified" aria-label="Document your knowledge by getting certified">GET CERTIFIED</a>
+  <a href="#" title="Contact us about W3Schools Academy for educational institutions" aria-label="Contact us about W3Schools Academy for educational institutions">FOR TEACHERS</a>
+  <a href="#" title="W3Schools Practice Problems" aria-label="W3Schools Practice Problems">PRACTICE</a>
+  <label class="bb-contact" for="contact-toggle" title="Contact us about sales or errors">CONTACT US</label>
+</nav>
+
+<footer class="footer" id="footer">
+  <div class="footer-inner">
+    <div class="footer-cols">
+      <div>
+        <h5>Top Tutorials</h5>
+        <a href="#">HTML Tutorial</a>
+        <a href="#">CSS Tutorial</a>
+        <a href="#">JavaScript Tutorial</a>
+        <a href="#">How To Tutorial</a>
+        <a href="#">SQL Tutorial</a>
+        <a href="#">Python Tutorial</a>
+        <a href="#">W3.CSS Tutorial</a>
+        <a href="#">Bootstrap Tutorial</a>
+        <a href="#">PHP Tutorial</a>
+        <a href="#">Java Tutorial</a>
+        <a href="#">C++ Tutorial</a>
+        <a href="#">jQuery Tutorial</a>
+      </div>
+      <div>
+        <h5>Top References</h5>
+        <a href="#">HTML Reference</a>
+        <a href="#">CSS Reference</a>
+        <a href="#">JavaScript Reference</a>
+        <a href="#">SQL Reference</a>
+        <a href="#">Python Reference</a>
+        <a href="#">W3.CSS Reference</a>
+        <a href="#">Bootstrap Reference</a>
+        <a href="#">PHP Reference</a>
+        <a href="#">HTML Colors</a>
+        <a href="#">Java Reference</a>
+        <a href="#">AngularJS Reference</a>
+        <a href="#">jQuery Reference</a>
+      </div>
+      <div>
+        <h5>Top Examples</h5>
+        <a href="#">HTML Examples</a>
+        <a href="#">CSS Examples</a>
+        <a href="#">JavaScript Examples</a>
+        <a href="#">How To Examples</a>
+        <a href="#">SQL Examples</a>
+        <a href="#">Python Examples</a>
+        <a href="#">W3.CSS Examples</a>
+        <a href="#">Bootstrap Examples</a>
+        <a href="#">PHP Examples</a>
+        <a href="#">Java Examples</a>
+        <a href="#">XML Examples</a>
+        <a href="#">jQuery Examples</a>
+      </div>
+      <div>
+        <h5><a href="#">Get Certified</a></h5>
+        <a href="#">HTML Certificate</a>
+        <a href="#">CSS Certificate</a>
+        <a href="#">JavaScript Certificate</a>
+        <a href="#">Front End Certificate</a>
+        <a href="#">SQL Certificate</a>
+        <a href="#">Python Certificate</a>
+        <a href="#">PHP Certificate</a>
+        <a href="#">jQuery Certificate</a>
+        <a href="#">Java Certificate</a>
+        <a href="#">C++ Certificate</a>
+        <a href="#">C# Certificate</a>
+        <a href="#">XML Certificate</a>
+      </div>
+    </div>
+
+    <div class="footer-social">
+      <a href="#" title="W3Schools on YouTube" aria-label="W3Schools on YouTube"><i class="fa-brands fa-youtube"></i></a>
+      <a href="#" title="W3Schools on LinkedIn" aria-label="W3Schools on LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+      <a href="#" title="Join the W3schools community on Discord" aria-label="Join the W3schools community on Discord"><i class="fa-brands fa-discord"></i></a>
+      <a href="#" title="W3Schools on Facebook" aria-label="W3Schools on Facebook"><i class="fa-brands fa-facebook"></i></a>
+      <a href="#" title="W3Schools on Instagram" aria-label="W3Schools on Instagram"><i class="fa-brands fa-instagram"></i></a>
+      <a href="#" title="W3Schools on TikTok" aria-label="W3Schools on TikTok"><i class="fa-brands fa-tiktok"></i></a>
+    </div>
+
+    <div class="footer-links">
+      <a href="#">FORUM</a>
+      <a href="#">ABOUT</a>
+      <a href="#">ACADEMY</a>
+    </div>
+
+    <p class="footer-legal">
+      W3Schools is optimized for learning and training. Examples might be simplified to improve reading and learning.<br>
+      Tutorials, references, and examples are constantly reviewed to avoid errors, but we cannot warrant full correctness<br>
+      of all content. While using W3Schools, you agree to have read and accepted our <a href="#">terms of use</a>,
+      cookies and <a href="#">privacy policy</a>.
+    </p>
+    <p class="footer-legal">
+      <a href="#">Copyright 1999-2026</a> by Refsnes Data. All Rights Reserved.<br>
+      <a href="#">W3Schools is Powered by W3.CSS</a>.
+    </p>
+  </div>
+</footer>
+
+<!-- Contact modal (opened from the bottom bar, CSS-only) -->
+<div class="contact-modal">
+  <div class="contact-box">
+    <label class="contact-close" for="contact-toggle">&times;</label>
+    <h2>Contact Sales</h2>
+    <p>If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:<br>sales@w3schools.com</p>
+    <h2>Report Error</h2>
+    <p>If you want to report an error, or if you want to make a suggestion, send us an e-mail:<br>help@w3schools.com</p>
+  </div>
+</div>
+
+<script>
+document.addEventListener('click',function(e){if(e.target.closest('a[href]'))e.preventDefault();});
+document.addEventListener('submit',function(e){e.preventDefault();});
+</script>
+</body>
+</html>
